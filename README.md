@@ -12,7 +12,7 @@ Ressources web :
 * https://hub.docker.com/r/arm64v8/golang/
 * https://hub.docker.com/r/arm64v8/alpine/
 
-codeonstruction de l'image
+Construction de l'image
 ```
 $ docker build -t xavier/whoami .
 ```
