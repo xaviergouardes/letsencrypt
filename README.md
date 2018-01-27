@@ -14,12 +14,19 @@ Ressources web :
 
 Construction de l'image
 ```
-$ docker build -t xavier/whoami .
+$ docker build -t xtechnologies/whoami:1.0.0 .
 ```
 
 Lancer un container
 ```
-docker run -d -p 8000:8000 --name whoami -t xavier/whoami
+docker run -d -p 8000:8000 --name whoami -t xtechnologies/whoami:1.0.0
+```
+
+
+Pousser l'image dans le repository
+```
+docker login -u xtechnologies -p *******
+docker push xtechnologies/whoami:1.0.0
 ```
 
 Accéder au container
