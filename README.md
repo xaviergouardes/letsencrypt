@@ -4,13 +4,36 @@ letsencrypt, nginx-proxy pour arm Odroid
 
 Source projet : https://github.com/jwilder?utf8=%E2%9C%93&tab=repositories&q=let&type=&language=
 
-## container Who am I
+## Container nginx sur alpine pour arm64v8
+-----
+Ressources web : https://github.com/sickp/docker-alpine-nginx.git
+
+Construction de l'image
+```
+$ docker build -t xtechnologies/nginx.alpine.arm64v8 .
+```
+
+Pousser l'image dans le repository
+```
+docker login -u xtechnologies -p *******
+docker push xtechnologies/nginx.alpine.arm64v8
+```
+
+## Container nginx-proxy
+-----
+Ressources web :
+
+Sous-domaines
+```
+wikixav.gouardes.eu
+cloud.gouardes.eu
+```
+
+## Container Who am I
 -----
 Ressources web :
 * https://hub.docker.com/r/jwilder/whoami/
 * https://github.com/jwilder/whoami
-* https://hub.docker.com/r/arm64v8/golang/
-* https://hub.docker.com/r/arm64v8/alpine/
 
 Construction de l'image
 ```
