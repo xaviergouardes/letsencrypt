@@ -70,3 +70,7 @@ RUN set -ex \
   && mkdir -p /var/cache/nginx \
   && apk del .build-deps \
   && rm -rf /tmp/*
+
+# RUN mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf/nginx.conf.origin
+
+ADD ./nginx.conf /etc/nginx
